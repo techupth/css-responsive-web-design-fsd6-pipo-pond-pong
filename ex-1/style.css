@@ -1,1 +1,140 @@
-/* Start coding here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.header {
+    margin: 100px 0px 100px 0px;
+    font-size: xx-large;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.first-row {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-bottom: 50px;
+
+
+}
+
+.second-row {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(253, 252, 252);
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.09);
+    -webkit-box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.09);
+}
+
+.card:hover {
+    width: 260px;
+    height: 210px;
+    transition: all 0.15s ease;
+ }
+
+i {
+    color: orange;
+    font-size: 35px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+i:hover {
+    font-size: 40px;
+    color: rgb(250, 204, 119);
+    transition: all 0.35s ease;
+}
+
+h3 {
+    margin-left: 10px;
+    font-size: 20px;
+    color: rgb(28, 28, 54);
+    position: absolute;
+    top: 130px;
+}
+
+.link {
+    margin-left: 10px;
+    font-size: 13px;
+    color: rgb(184, 184, 202);
+    position: absolute;
+    top: 160px;
+    text-decoration: none;
+
+}
+
+.card a i {
+    position: absolute;
+    font-size: 15px;
+    color: rgb(28, 28, 54);
+    position: absolute;
+    top: 160px;
+    left: 200px;
+
+}
+
+.card a i:hover {
+    font-size: 20px;
+    color: orange;
+    transition: all 0.25s ease;
+}
+
+.card-s-4 {
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+}
+
+.card-s-4 h3 {
+    position: absolute;
+    top: 70px;
+    left: 30px;
+}
+
+.card-s-4 a i {
+    position: absolute;
+    top: 110px;
+    left: 160px;
+}
+
+@media only screen and (max-width: 600px) {
+    .first-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second-row {
+        display: flex;
+        flex-direction: column;
+    }
+}
